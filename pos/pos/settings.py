@@ -33,10 +33,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CORS_TRUSTED_ORIGIN = ['*']
+CORS_TRUSTED_ORIGIN = ['https://7fjn3n-8000.csb.app']
 
 CORS_ALLOW_ORIGINS = ['*']
 
+CSRF_TRUSTED_ORIGINS = ['https://7fjn3n-8000.csb.app']
 
 # Application definition
 
