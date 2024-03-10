@@ -27,8 +27,10 @@ urlpatterns = i18n_patterns(
     path("admin/", admin.site.urls),
     path("filer/", include("filer.urls")),
     path("", include("cms.urls")),
+    r'^taggit_autosuggest/', include('taggit_autosuggest.urls')
 )
 
 
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
